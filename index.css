@@ -1,0 +1,39 @@
+
+body{
+    margin: 20px;
+    width: auto;
+    font-family: Verdana, sans-serif;
+    background-color: rgb(223, 224, 165);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+  
+.flex-item-left {
+    flex: 60%;
+}
+  
+.flex-item-right {
+    flex: 40%;
+}
+
+header,h1,h2,figure{
+    text-align: center;
+}
+
+article{
+    padding: 20px;
+}
+
+#canvas-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+#canvas{
+    background-color: white;  
+    display: inline;
+}

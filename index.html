@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Dariusz Lesiecki Projekt 1</title>
+</head>    
+<body>
+<header>
+    <h1>Wahadło matematyczne</h1>
+    <h1>Dariusz Lesiecki</h1>
+</header>
+<div class="flex-container">
+    <div class="flex-item-left">
+        <br><br>
+        <h2>Czym jest wahadło?</h2>
+        <article>
+            Wahadło – ciało zawieszone w jednorodnym polu grawitacyjnym w taki sposób, że może wykonywać drgania wokół poziomej osi nie przechodzącej
+            przez środek ciężkości zawieszonego ciała.
+        </article>
+
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Oscillating_pendulum.gif" alt="wahadło"  width=250/>
+            <figcaption>Animacja wahadła pokazująca wektory prędkości oraz przyspieszenia</figcaption>
+        </figure>
+
+        
+        <h2>Wahadło matematyczne</h2>
+        <article>
+            Wahadło matematyczne to punkt materialny poruszający się po okręgu w płaszczyźnie 
+            pionowej w jednorodnym polu grawitacyjnym. 
+            Równanie ruchu wahadła określa wzór:
+
+            <figure>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9457778079fc5d0ad38d4aca3ee58dd211f2b08b" alt="równanie ruchu">
+            </figure>
+
+            Gdzie:<br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18b67de6bf25dba7a24e66967ff6319858798734"> – amplituda drgań,<br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0dd3838b4685e37e5f63719707ee4a621aa3a593"> – częstość kołowa drgań, <br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33ee699558d09cf9d653f6351f9fda0b2f4aaa3e"> – faza początkowa drgań. <br>
+        </article>
+
+        <article>
+            Zależność kąta wahań od czasu i może być określone wzorem: <br>
+            <figure>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4df1b2eee77126442e3409058b0d2d7286fd2dc">
+            </figure>
+            Gdzie:<br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/18b67de6bf25dba7a24e66967ff6319858798734"> – amplituda drgań, <br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0dd3838b4685e37e5f63719707ee4a621aa3a593"> – częstość kołowa drgań, <br>
+            <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33ee699558d09cf9d653f6351f9fda0b2f4aaa3e"> -faza początkowa drgań. <br>
+        </article>
+
+        <article>
+            Okres drgań jest związany z częstością wzorem: <br>
+            <figure>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c847e105049bc23f1e024c6cd4086ddfa54c12f">
+            </figure>
+            Okres drgań wynosi: <br>
+            <figure>
+                <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/33a09a7d25e867544bffc271d65998738e1d688d">
+            </figure>
+        </article>
+    </div>
+    
+    <div class="flex-item-right">
+        <div id="canvas-container">
+            <canvas id='canvas' width="500" height="500"></canvas>
+            <div>
+                <span id="slider_value">45</span>°<br>
+                <input width="400" type="range" min="0" max="180" id="slider" name="slider" value="45" onchange="show_value(this.value);">
+                <footer>Kąt odchylenia</footer>
+            </div>
+            <button onclick="startorstop()" id="button">Start</button>
+        </div>
+        
+    </div>
+    <script src="scripts.js" type="text/javascript"></script>
+</body>
+</html>
